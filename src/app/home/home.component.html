@@ -1,0 +1,125 @@
+
+<!--<body>-->
+  <!--<div id="banner">-->
+    <!--<img id="logo" src="../../assets/pic/logo.png" alt="Best Logo">-->
+    <!--<div id="buttons">-->
+     <!--<input class ="logbutton" type="button" routerLink="/login" value="Login">-->
+      <!--<br>-->
+      <!--<input class ="logbutton" type="button" routerLink="/admin" value="Admin Login">-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<h1 id="pageheader"> Sitarbakıs </h1>-->
+<!--</body>-->
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body {font-family: "Times New Roman", Georgia, Serif;}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Sıtarbakış Coffee</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="/order" class="w3-bar-item w3-button">Order</a>
+      <a href="/login" class="w3-bar-item w3-button">Log In</a>
+      <a href="/admin" class="w3-bar-item w3-button">Admin</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="../../assets/pic/turk.jpg" alt="Some turkish coffee" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Coffee is Good</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="../../assets/pic/logo.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Coffe</h1><br>
+      <h5 class="w3-center">Tradition since 1871</h5>
+      <p class="w3-large"> Genç yaşta hayata veda eden Hulusi Bey’in ardından yönetimi, yurtdışında eğitim görmüş olan en küçük kardeş Ahmet Rıza Kurukahveci devraldı. Ahmet Bey’in dünyadaki gelişmeleri yakından takip ediyor olması, onu reklama ve firmayı çağdaşlaştırma yönünde adımlar atmaya yöneltti.<br>
+        Bu dönemde kahve, parşömenli kâğıt paketlere konularak şehir içindeki bakkallara otomobil ile dağıtılmaya başlandı. Böylece Türkiye’de bir ilk daha gerçekleştirilmişti.<br>
+        Ayrıca o yıllarda büyük yenilik olarak tanımlanan afiş ve takvim çalışmaları ile firmanın reklamları yaygınlaştırıldı. Özel arabalarla yurtiçinde kahve dağıtımı da bu dönemde başladı. Galatasaray Sahne Sokağı’nda bir şube açıldı.<br>
+        Bugün Kurukahveci’nin yönetiminde olan Mehmet Efendi’nin torunları; Ahmet Rıza Kurukahveci’nin vefatından sonra yönetimi devraldılar.<br>
+        Kurukahveci Mehmet Efendi, dünya çapında yaygınlaşan bir kahve üreticisi olmasına rağmen, halen bir aile şirketi olma özelliğini koruyarak, 1871’den günümüze ulaşan kalitesini modern teknolojileri kullanarak sürdürmektedir. </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Kurukahveci Mehmet Efendi’nin Nefis Türk Kahvesi, geleneksel itina ve titizlik ile ileri teknoloji kullanılarak kavrulur, öğütülür ve paketlenir.<br>Özel ambalajlarında sunulan Nefis Türk Kahvemizi istediğiniz kadar alıp, son tüketim tarihine kadar saklayabilirsiniz. Kokusuyla, tadıyla, öğütüldüğü günkü tazeliğini koruyacaktır.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Caffè Latte</h4>
+      <p class="w3-text-grey">Our dark, rich espresso is balanced with steamed milk and topped with a light layer of foam. A perfect milk-forward warm up.</p><br>
+
+      <h4>Süte Nes</h4>
+      <p class="w3-text-grey">Nescafe ama SÜT'e</p><br>
+
+      <h4>Türk Kahvesi</h4>
+      <p class="w3-text-grey">Türk Kahvesi sunulurken yanında su verilmesi âdettir. İçilen su ağzı kahve lezzetine hazırlar.</p><br>
+
+      <h4>Iced White Chocolate Mocha</h4>
+      <p class="w3-text-grey">Espresso, milk and white chocolate flavoured sauce poured over ice. Topped with sweetened whipped cream.</p><br>
+
+      <h4>Freshly Brewed Coffee</h4>
+      <p class="w3-text-grey">Medium-roasted coffee that's smooth, balanced and rich in flavour – perfect for every day.</p>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="../../assets/pic/dark.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+  <!-- End page content -->
+</div>
+
+
+</body>
+</html>

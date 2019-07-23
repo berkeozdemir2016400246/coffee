@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+  .w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" (click)="w3_close()"
+     class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#espressodrinks" onclick="w3_close()" class="w3-bar-item w3-button">Espresso Drinks</a>
+  <a href="#icedcoffe" onclick="w3_close()" class="w3-bar-item w3-button">Iced Coffee</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" (click)="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">Order</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="espressodrinks">
+
+    <h1> Espresso Drinks</h1>
+    <div class="w3-quarter" *ngFor="let drink of espressodrinks">
+      <img src={{drink.src}} alt="Latte" style="width:100%">
+      <h3>{{drink.name}}</h3>
+      <p>{{drink.desc}}</p>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="icedcoffe">
+    <h1>Cold Brew</h1>
+    <div class="w3-quarter">
+      <img src="../../assets/pic/coldbrew.jpg" alt="Coldbrew" style="width:100%">
+      <h3>Caffè Latte</h3>
+      <p>Our Cold Brew coffee is handcrafted in small batches, slow-steeped in cool water for 20 hours, without touching heat, to give a super-smooth flavour.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../../assets/pic/nitrocoldbew.jpg" alt="Cold Brew Latte" style="width:100%">
+      <h3>Cold Brew Latte</h3>
+      <p>Try our Cold Brew coffee just the way you like it. Add milk for a smoother flavour or one of our many dairy free options for a creamy and more flavourable finish.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../../assets/pic/nitrocoldbrew.jpg" alt="Nitro" style="width:100%">
+      <h3>Nitro Cold Brew</h3>
+      <p>Sıtarbakış Cold Brew coffee is infused with nitrogen to give the beverage a smooth and velvety texture. Nitro Cold Brew is cold right out of the tap and served unsweetened without ice. A completely new coffee experience!.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../../assets/pic/doubleshot.jpg" alt="Doubleshot" style="width:100%">
+      <h3>Sıtarbakış Doubleshot™ Iced Coffee</h3>
+      <p>Made with rich, full-bodied Signature espresso that's shaken over ice and a touch of sweetened milk, this drink is delightfully convenient and easy to drink</p>
+    </div>
+  </div>
+
+
+
+  <!-- End page content -->
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+
