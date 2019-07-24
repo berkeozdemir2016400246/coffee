@@ -37,6 +37,29 @@ export class OrderComponent implements OnInit {
     }
   ]
 
+  iceddrinks = [
+    {
+      name:'Cold Brew',
+      desc:'Our Cold Brew coffee is handcrafted in small batches, slow-steeped in cool water for 20 hours, without touching heat, to give a super-smooth flavour',
+      src: '../../assets/pic/coldbrew.jpg'
+    },
+    {
+      name:'Cold Brew Latte',
+      desc:'Try our Cold Brew coffee just the way you like it. Add milk for a smoother flavour or one of our many dairy free options for a creamy and more flavourable finish.',
+      src: '../../assets/pic/nitrocoldbew.jpg'
+    },
+    {
+      name:'Nitro Cold Brew',
+      desc:'Sıtarbakış Cold Brew coffee is infused with nitrogen to give the beverage a smooth and velvety texture. Nitro Cold Brew is cold right out of the tap and served unsweetened without ice. A completely new coffee experience!',
+      src: "../../assets/pic/nitrocoldbrew.jpg"
+    },
+    {
+      name:'Sıtarbakış Doubleshot™ Iced Coffee',
+      desc:'Made with rich, full-bodied Signature espresso thats shaken over ice and a touch of sweetened milk, this drink is delightfully convenient and easy to drink',
+      src: '../../assets/pic/doubleshot.jpg'
+    }
+  ]
+
 
 
   constructor() {

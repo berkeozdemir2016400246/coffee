@@ -13,6 +13,7 @@ import {AuthService} from "./auth.service";
 import {UserService} from "./user.service";
 import { LogoutComponent } from './logout/logout.component';
 import { OrderComponent } from './order/order.component';
+import { IncreaseComponent } from './increase/increase.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OrderComponent } from './order/order.component';
     AdminComponent,
     HomeComponent,
     LogoutComponent,
-    OrderComponent
+    OrderComponent,
+    IncreaseComponent
   ],
   imports: [
     BrowserModule,
