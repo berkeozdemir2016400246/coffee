@@ -1,0 +1,9 @@
+<form >
+
+  <input  type="button" id="submit" value="Add to Cart" (click)="transmitUp(amount)">
+  <br>
+  <div class="value-button" id="decrease" (click)="decreaseValue()" value="Decrease Value">-</div>
+  <input (blur)="update($event)" type="number" id="number" value="{{amount}}" />
+  <div class="value-button" id="increase" (click)="increaseValue()" value="Increase Value">+</div>
+
+</form>

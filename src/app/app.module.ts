@@ -14,6 +14,7 @@ import {UserService} from "./user.service";
 import { LogoutComponent } from './logout/logout.component';
 import { OrderComponent } from './order/order.component';
 import { IncreaseComponent } from './increase/increase.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { IncreaseComponent } from './increase/increase.component';
     HomeComponent,
     LogoutComponent,
     OrderComponent,
-    IncreaseComponent
+    IncreaseComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

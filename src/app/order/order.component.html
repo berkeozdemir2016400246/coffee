@@ -7,21 +7,24 @@
   body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   .w3-bar-block .w3-bar-item {padding:20px}
 </style>
-<body>
+<body class="w3-display-container">
+
 
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:20%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" (click)="w3_close()"
      class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#espressodrinks" onclick="w3_close()" class="w3-bar-item w3-button">Espresso Drinks</a>
-  <a href="#icedcoffe" onclick="w3_close()" class="w3-bar-item w3-button">Iced Coffee</a>
+  <a href="/order/#espressodrinks" onclick="w3_close()" class="w3-bar-item w3-button">Espresso Drinks</a>
+  <a href="/order/#icedcoffe" onclick="w3_close()" class="w3-bar-item w3-button">Iced Coffee</a>
+  <app-cart></app-cart>
 </nav>
 
 <!-- Top menu -->
 <div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+  <div class="w3-white w3-xlarge" style="max-width:1920px;margin:auto">
     <div class="w3-button w3-padding-16 w3-left" (click)="w3_open()">☰</div>
     <div class="w3-center w3-padding-16">Order</div>
+    <div class="w3-padding-16 w3-right"></div>
   </div>
 </div>
 
@@ -29,28 +32,35 @@
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center w3-border-black" id="espressodrinks">
+  <div class="w3-row-padding w3-padding-16 w3-center w3-container w3-cell" id="espressodrinks">
 
     <h1> Espresso Drinks</h1>
-    <div class="w3-quarter" *ngFor="let drink of espressodrinks">
-      <img src={{drink.src}} alt="Latte" style="width:100%">
-      <h3>{{drink.name}}</h3>
-      <p>{{drink.desc}}</p>
-      <app-increase></app-increase>
+    <div class="w3-quarter w3-container w3-display-container tall" *ngFor="let drink of espressodrinks" >
+      <img class="w3-bar-item " src={{drink.src}} alt="Latte" style="width:100%">
+      <h3 class="w3-bar-item ">{{drink.name}}</h3>
+      <p class="w3-bar-item ">{{drink.desc}}</p>
+      <h3 class="w3-bar-item">{{drink.price}}$</h3>
+      <app-increase (notify)="updateCart($event,drink.name)" class="w3-display-bottommiddle"></app-increase>
     </div>
 
 
   </div>
-
+  <br>
   <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="icedcoffe">
-    <h1>Cold Brew</h1>
-    <div class="w3-quarter" *ngFor="let drink of iceddrinks">
-      <img src={{drink.src}} alt="Latte" style="width:100%">
-      <h3>{{drink.name}}</h3>
-      <p>{{drink.desc}}</p>
+  <div class="w3-row-padding w3-padding-16 w3-center w3-container w3-cell" id="icedcoffee">
+
+    <h1> Iced Coffee Drinks</h1>
+    <div class="w3-quarter w3-container w3-display-container tall" *ngFor="let drink of iceddrinks">
+      <img class="w3-bar-item " src={{drink.src}} alt="Latte" style="width:100%">
+      <h3 class="w3-bar-item ">{{drink.name}}</h3>
+      <p class="w3-bar-item ">{{drink.desc}}</p>
+      <h3 class="w3-bar-item">{{drink.price}}</h3>
+      <app-increase (notify)="updateCart($event,drink.name)" class="w3-display-bottommiddle"></app-increase>
     </div>
+
+
   </div>
+
 
 
 
